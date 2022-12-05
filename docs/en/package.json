@@ -1,0 +1,23 @@
+{
+  "name": "docs-en",
+  "version": "0.0.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "scripts": {
+    "dev": "yarn docs:dev",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs && cp vercel.json docs/.vitepress/dist",
+    "docs:serve": "vitepress serve docs"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4",
+    "vitepress": "^1.0.0-alpha.26",
+    "vue": "^3.2.37"
+  },
+  "homepage": "https://docs.aircode.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aircodelabs/aircode.git",
+    "directory": "docs/en"
+  }
+}
