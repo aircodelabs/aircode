@@ -1,2 +1,2 @@
-# aircode
+# AirCode
 AirCode Open Source
