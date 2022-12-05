@@ -7,7 +7,8 @@ on:
     branches:
       - main
     paths:
-      - docs/zh-cn
+      - docs/zh-cn/**
+  workflow_dispatch:
 jobs:
   Deploy-Production:
     runs-on: ubuntu-latest
@@ -17,13 +18,12 @@ jobs:
         with:
           node-version: 16
           cache: yarn
-      - name: Change Directory
-        run: cd docs/zh-cn
+          cache-dependency-path: docs/zh-cn/yarn.lock
       - name: Install Vercel CLI
         run: yarn global add vercel@latest
-      - name: Pull Vercel Environment Information
-        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_DEPLOY_TOKEN }}
-      - name: Build Project Artifacts
-        run: vercel build --prod --token=${{ secrets.VERCEL_DEPLOY_TOKEN }}
-      - name: Deploy Project Artifacts to Vercel
-        run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_DEPLOY_TOKEN }}
+      - name: Build Project and Deploy to Vercel
+        working-directory: ./docs/zh-cn
+        run: |
+          vercel pull --yes --environment=production --token=${{ secrets.VERCEL_DEPLOY_TOKEN }}
+          vercel build --prod --token=${{ secrets.VERCEL_DEPLOY_TOKEN }}
+          vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_DEPLOY_TOKEN }}

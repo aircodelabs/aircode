@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "private": true,
   "license": "Apache-2.0",
-  "main": "docs/src/index.md",
   "scripts": {
     "dev": "yarn docs:dev",
     "docs:dev": "vitepress dev docs",
