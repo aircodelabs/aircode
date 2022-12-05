@@ -20,6 +20,19 @@ export default defineConfig({
   themeConfig: {
     nav,
     sidebar,
+    outline: [2, 3],
     outlineTitle: '本页目录',
+    lastUpdatedText: '最后更新于',
+    docFooter: {
+      prev: '上一篇',
+      next: '下一篇',
+    },
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/aircodelabs/aircode' },
+    ],
+    editLink: {
+      pattern: 'https://github.com/aircodelabs/aircode/blob/main/docs/en/docs/src/:path',
+      text: '在 GitHub 编辑此页',
+    },
   },
 });

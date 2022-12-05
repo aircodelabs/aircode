@@ -20,5 +20,13 @@ export default defineConfig({
   themeConfig: {
     nav,
     sidebar,
+    outline: [2, 3],
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/aircodelabs/aircode' },
+    ],
+    editLink: {
+      pattern: 'https://github.com/aircodelabs/aircode/blob/main/docs/en/docs/src/:path',
+      text: 'Edit this page on GitHub',
+    },
   },
 });
