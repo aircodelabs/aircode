@@ -42,9 +42,9 @@ const nav: DefaultTheme.NavItem[] = [
     ],
   },
   {
-    text: 'Support',
-    activeMatch: '^/support/',
-    link: '/support/',
+    text: 'Help',
+    activeMatch: '^/help/',
+    link: '/help/',
   },
   {
     text: 'Dashboard',

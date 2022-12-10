@@ -2,7 +2,7 @@ import { DefaultTheme } from "vitepress";
 
 const sidebar: DefaultTheme.Sidebar = {
   '/errors/': [],
-  '/support/': [],
+  '/help/': [],
   '/legal/': [],
   // '/reference/': [
   //   {

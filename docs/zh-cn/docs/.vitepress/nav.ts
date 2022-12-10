@@ -52,8 +52,8 @@ const nav: DefaultTheme.NavItem[] = [
   // },
   {
     text: '帮助和支持',
-    activeMatch: '^/support/',
-    link: '/support/',
+    activeMatch: '^/help/',
+    link: '/help/',
   },
   {
     text: '控制台',
