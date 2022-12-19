@@ -28,5 +28,10 @@ export default defineConfig({
       pattern: 'https://github.com/aircodelabs/aircode/blob/main/docs/en/docs/src/:path',
       text: 'Edit this page on GitHub',
     },
+    algolia: {
+      appId: 'CZD04B6QDX',
+      apiKey: '3f5722cbb4757e46792cff3e953fe990',
+      indexName: 'aircode'
+    },
   },
 });
