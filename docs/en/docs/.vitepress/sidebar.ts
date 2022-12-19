@@ -2,7 +2,7 @@ import { DefaultTheme } from "vitepress";
 
 const sidebar: DefaultTheme.Sidebar = {
   '/errors/': [],
-  '/support/': [],
+  '/help/': [],
   '/legal/': [],
   '/': [
     {
@@ -55,14 +55,14 @@ const sidebar: DefaultTheme.Sidebar = {
         { text: 'File Storage API', link: '/reference/server/files-api' },
       ],
     },
-    {
-      text: 'More',
-      collapsible: true,
-      items: [
-        { text: 'FAQs', link: '/about/faq' },
-        { text: 'Resource Limits', link: '/about/limits' },
-      ],
-    }
+    // {
+    //   text: 'More',
+    //   collapsible: true,
+    //   items: [
+    //     { text: 'FAQs', link: '/about/faq' },
+    //     { text: 'Resource Limits', link: '/about/limits' },
+    //   ],
+    // }
   ],
 };
 

@@ -9,5 +9,8 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    { "source": "/support/", "destination": "/help/" }
   ]
 }

@@ -22,13 +22,13 @@ const nav: DefaultTheme.NavItem[] = [
           { text: 'File Storage', link: '/guide/files/' },
         ],
       },
-      {
-        text: 'More',
-        items: [
-          { text: 'FAQs', link: '/about/faq' },
-          { text: 'Limits', link: '/about/limits' },
-        ],
-      },
+      // {
+      //   text: 'More',
+      //   items: [
+      //     { text: 'FAQs', link: '/about/faq' },
+      //     { text: 'Limits', link: '/about/limits' },
+      //   ],
+      // },
     ],
   },
   {
@@ -42,9 +42,9 @@ const nav: DefaultTheme.NavItem[] = [
     ],
   },
   {
-    text: 'Support',
-    activeMatch: '^/support/',
-    link: '/support/',
+    text: 'Help',
+    activeMatch: '^/help/',
+    link: '/help/',
   },
   {
     text: 'Dashboard',
