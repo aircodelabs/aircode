@@ -24,13 +24,13 @@ const nav: DefaultTheme.NavItem[] = [
           // { text: '账号管理', link: '/guide/accounts/create' },
         ],
       },
-      {
-        text: '更多',
-        items: [
-          { text: '常见问题', link: '/about/faq' },
-          { text: '资源限制', link: '/about/limits' },
-        ],
-      },
+      // {
+      //   text: '更多',
+      //   items: [
+      //     { text: '常见问题', link: '/about/faq' },
+      //     { text: '资源限制', link: '/about/limits' },
+      //   ],
+      // },
     ],
   },
   {

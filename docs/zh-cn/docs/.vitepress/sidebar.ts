@@ -4,41 +4,6 @@ const sidebar: DefaultTheme.Sidebar = {
   '/errors/': [],
   '/help/': [],
   '/legal/': [],
-  // '/reference/': [
-  //   {
-  //     text: '云函数 API',
-  //     items: [
-  //       { text: '云函数运行时', link: '/reference/functions/runtime' },
-  //       { text: 'params', link: '/reference/functions/params' },
-  //       { text: 'context', link: '/reference/functions/context' },
-  //     ],
-  //   },
-  //   {
-  //     text: '数据库 API',
-  //     collapsible: true,
-  //     items: [
-  //       {
-  //         text: 'Table',
-  //         link: '/reference/database/table',
-  //         items: [
-  //           { text: 'db.table', link: '/reference/database/table#db-table-tablename' },
-  //           { text: 'Table.save', link: '/reference/database/table#table-save-record-arrayofrecords' },
-  //           { text: 'Table.delete', link: '/reference/database/table#table-delete-record-arrayofrecords' },
-  //           { text: 'Table.where', link: '/reference/database/table#table-where-conditions' },
-  //         ],
-  //       },
-  //       {
-  //         text: '查询指令',
-  //         link: '/reference/database/find-commands',
-  //         items: [
-  //           { text: 'Query.find', link: '/reference/database/find-commands#query-find' },
-  //         ]
-  //       },
-  //       { text: '排序和分页', link: '/reference/database/sort-and-pagination' },
-  //       { text: '字段筛选', link: '/reference/database/projection' },
-  //     ],
-  //   }
-  // ],
   '/': [
     {
       text: '入门指南',
@@ -124,14 +89,14 @@ const sidebar: DefaultTheme.Sidebar = {
     //     { text: '删除个人账号', link: '/guide/accounts/delete' },
     //   ],
     // },
-    {
-      text: '更多',
-      collapsible: true,
-      items: [
-        { text: '常见问题', link: '/about/faq' },
-        { text: '资源限制', link: '/about/limits' },
-      ],
-    }
+    // {
+    //   text: '更多',
+    //   collapsible: true,
+    //   items: [
+    //     { text: '常见问题', link: '/about/faq' },
+    //     { text: '资源限制', link: '/about/limits' },
+    //   ],
+    // }
   ],
 };
 

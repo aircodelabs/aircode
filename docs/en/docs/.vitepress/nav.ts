@@ -22,13 +22,13 @@ const nav: DefaultTheme.NavItem[] = [
           { text: 'File Storage', link: '/guide/files/' },
         ],
       },
-      {
-        text: 'More',
-        items: [
-          { text: 'FAQs', link: '/about/faq' },
-          { text: 'Limits', link: '/about/limits' },
-        ],
-      },
+      // {
+      //   text: 'More',
+      //   items: [
+      //     { text: 'FAQs', link: '/about/faq' },
+      //     { text: 'Limits', link: '/about/limits' },
+      //   ],
+      // },
     ],
   },
   {
