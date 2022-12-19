@@ -6,7 +6,14 @@
 
 我们准备了一个可直接运行的例子，点击「Run」按钮，即可查看本例中云函数的运行结果。
 
-<iframe src="https://codesandbox.io/embed/hungry-chatterjee-c2yyux?fontsize=14&hidenavigation=1&theme=light"
+<script setup>
+import { useData } from 'vitepress';
+
+const { isDark } = useData();
+</script>
+
+<iframe
+  :src="`https://codesandbox.io/embed/hungry-chatterjee-c2yyux?fontsize=14&hidenavigation=1&codemirror=1&hidenavigation=1&theme=${isDark ? 'dark' : 'light'}`"
   style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
   title="hungry-chatterjee-c2yyux"
   allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
@@ -19,11 +26,11 @@
 
 > 此处我们创建一个名为 `Hello World` 的应用作为示例。
 
-![](_images/index/1668073287668.png)
+<ACImage src="_images/index/1668073287668.png" mode="light" />
 
 创建完成后，会自动跳转到创建的应用页面，在这个页面中可以完成代码的开发、调试和上线。
 
-![](_images/index/1668075686260.png)
+<ACImage src="_images/index/1668075686260.png" mode="light" />
 
 ## 创建第一个函数 {#create-a-function}
 
@@ -31,7 +38,7 @@
 
 > 此处我们创建一个名为 `myHelloWorld.js` 的云函数作为示例。
 
-![](_images/index/1668075742586.png)
+<ACImage src="_images/index/1668075742586.png" mode="light" />
 
 创建完成后的函数将包含一段初始代码。
 
@@ -88,7 +95,7 @@ module.exports = async function(params, context) {
 18:24:30.237 Received params: { payload: 'Hello, Micheal!' }
 ```
 
-![](_images/index/1668075929551.png)
+<ACImage src="_images/index/1668075929551.png" mode="light" />
 
 ## 部署云函数 {#deploy}
 
@@ -96,7 +103,7 @@ module.exports = async function(params, context) {
 
 点击顶部栏中的「Deploy」按钮，保持弹出的对话框中的选项不变，确认开始部署。
 
-![](_images/index/1668076003954.png)
+<ACImage src="_images/index/1668076003954.png" mode="light" />
 
 部署成功后，在函数名称下方会出现该函数的线上 URL，点击可以将其复制到剪切板。
 

@@ -55,7 +55,7 @@ module.exports = async function (params, context) {
 
 在控制台下方的「Database」区域中，选中 `persons` 数据表，也可以看到新增的数据。
 
-![](_images/database/1668076471815.png)
+<ACImage src="_images/database/1668076471815.png" mode="light" />
 
 ## 使用 `find` 查询记录 {#find}
 

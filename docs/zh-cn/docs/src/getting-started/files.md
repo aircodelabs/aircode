@@ -60,7 +60,7 @@ AirCode 会为每个上传文件添加唯一的标识，即使上传多个同名
 
 每个被成功上传的文件，都会自动在数据库 `_files` 表中新增一条记录。在控制台下方的「Database」区域中，选中 `_files` 表就可以看到刚刚上传的文件。
 
-![](_images/files/1668076914916.png)
+<ACImage src="_images/files/1668076914916.png" mode="light" />
 
 ## 使用 `download` 下载文件 {#download}
 
