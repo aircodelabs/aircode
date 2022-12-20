@@ -6,7 +6,7 @@ AirCode 提供了一套极致简单的文件存储系统，一行代码即可上
 const file = await aircode.files.upload('Hello World', 'hello.txt');
 ```
 
-同时，所有上传的文件信息可以在「Database」区域的 `_files` 表中查看和管理，还可以直接从浏览器中上传和管理文件。
+同时，所有上传的文件信息可以在 **Database** 区域的 `_files` 表中查看和管理，还可以直接从浏览器中上传和管理文件。
 
 ::: details 还未在 AirCode 中用过文件存储？
 如果你从未使用过 AirCode 的文件存储（即 `aircode.files`），建议先跟随[文件存储入门](/getting-started/files.html)快速上手。

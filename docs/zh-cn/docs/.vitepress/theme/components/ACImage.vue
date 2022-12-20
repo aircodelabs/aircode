@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useData } from 'vitepress';
-import { computed, inject, ref, onMounted, onBeforeUnmount, watch } from 'vue';
+import { useData, withBase } from 'vitepress';
+import { computed, inject, ref, onMounted, onBeforeUnmount, watch, Ref } from 'vue';
 import { Zoom } from 'medium-zoom';
 
 const ZOOM_DELAY = 500;
@@ -17,20 +17,21 @@ const { isDark } = useData();
 const show = computed(
   () => isDark.value === (props.mode === 'dark')
 );
+const fullSrc = computed(() => withBase(props.src));
 const image = ref<HTMLImageElement | null>(null);
-const zoom = inject('medium-zoom') as Zoom;
+const zoom = inject('medium-zoom') as Ref<Zoom | null>;
 
 const attachZoom = () => {
   setTimeout(() => {
-    if (image.value) {
-      zoom.attach(image.value);
+    if (image.value && zoom.value) {
+      zoom.value.attach(image.value);
     }
   }, ZOOM_DELAY);
 }
 
 const detachZoom = () => {
-  if (image.value) {
-    zoom.detach(image.value);
+  if (image.value && zoom.value) {
+    zoom.value.detach(image.value);
   }
 }
 
@@ -56,5 +57,5 @@ watch(
 </script>
 
 <template>
-<img v-if="show" :src="src" :alt="alt" ref="image">
+<img v-if="show" :src="fullSrc" :alt="alt" ref="image">
 </template>
