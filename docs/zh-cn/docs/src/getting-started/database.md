@@ -33,7 +33,7 @@ module.exports = async function (params, context) {
 }
 ```
 
-点击调试，可以在「Response」区域看到如下结果：
+点击调试，可以在 **Response** 区域看到如下结果：
 
 ```json
 {
@@ -53,9 +53,10 @@ module.exports = async function (params, context) {
 使用 `save` 插入记录时，不需要提前创建表，若该表不存在则 AirCode 会自动创建。
 :::
 
-在控制台下方的「Database」区域中，选中 `persons` 数据表，也可以看到新增的数据。
+在控制台下方的 **Database** 区域中，选中 `persons` 数据表，也可以看到新增的数据。
 
-![](_images/database/1668076471815.png)
+<ACImage src="/_images/1671508034400.png" mode="light" />
+<ACImage src="/_images/1671508051952.png" mode="dark" />
 
 ## 使用 `find` 查询记录 {#find}
 
@@ -78,7 +79,7 @@ module.exports = async function (params, context) {
 }
 ```
 
-点击调试，可以在「Response」区域看到如下结果：
+点击调试，可以在 **Response** 区域看到如下结果：
 
 ```json
 {
@@ -123,7 +124,7 @@ module.exports = async function (params, context) {
 }
 ```
 
-点击调试，可以在「Response」区域看到如下结果：
+点击调试，可以在 **Response** 区域看到如下结果：
 
 ```json
 {
@@ -162,7 +163,7 @@ module.exports = async function (params, context) {
 }
 ```
 
-点击调试，可以在「Response」区域看到如下结果：
+点击调试，可以在 **Response** 区域看到如下结果：
 
 ```json
 {

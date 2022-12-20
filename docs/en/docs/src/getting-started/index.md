@@ -4,9 +4,16 @@ This is a 5-minute onboarding tutorial for developers who are new to AirCode. Th
 1. Create an AirCode application, develop and debug cloud functions online
 2. Deploy a Hello World online API, which can be invoked directly through HTTP
 
-We have provided an example that you can run directly. Click "Run", and you will see the result of the function in below example.
+We have provided an example that you can run directly. Click **Run**, and you will see the result of the function in below example.
 
-<iframe src="https://codesandbox.io/embed/hungry-chatterjee-c2yyux?fontsize=14&hidenavigation=1&theme=light"
+<script setup>
+import { useData } from 'vitepress';
+
+const { isDark } = useData();
+</script>
+
+<iframe
+  :src="`https://codesandbox.io/embed/hungry-chatterjee-c2yyux?fontsize=14&hidenavigation=1&codemirror=1&hidenavigation=1&theme=${isDark ? 'dark' : 'light'}`"
   style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
   title="hungry-chatterjee-c2yyux"
   allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
@@ -15,23 +22,26 @@ We have provided an example that you can run directly. Click "Run", and you will
 
 ## Create an App {#create-an-app}
 
-Sign up and log in to [AirCode Dashboard](https://aircode.io/dashboard), click "+ New Node.js App", and enter the app name in the pop-up window to create an App.
+Sign up and log in to [AirCode Dashboard](https://aircode.io/dashboard), click **+ New Node.js App**, and enter the app name in the pop-up window to create an App.
 
 > Here we create an App called `Hello World`.
 
-![](_images/index/1668073287668.png)
+<ACImage src="/_images/1668073287668.png" mode="light" />
+<ACImage src="/_images/1671505257580.png" mode="dark" />
 
 After the creation, it will automatically jump to the created App page, where you can complete the development, debugging and deployment.
 
-![](_images/index/1668075686260.png)
+<ACImage src="/_images/1671505485031.png" mode="light" />
+<ACImage src="/_images/1671505442147.png" mode="dark" />
 
 ## Create a Function {#create-a-function}
 
-Every new application will have a cloud function named `hello.js` by default, or you can create your own functions. Click the "+" button, enter your function's name, and click "✓" to finish the creation.
+Every new application will have a cloud function named `hello.js` by default, or you can create your own functions. Click the **+** button, enter your function's name, and click **✓** to finish the creation.
 
 > Here we create a cloud function named `myHelloWorld.js`.
 
-![](_images/index/1668075742586.png)
+<ACImage src="/_images/1671505845666.png" mode="light" />
+<ACImage src="/_images/1671505926961.png" mode="dark" />
 
 The created function will contain an initial piece of code.
 
@@ -64,7 +74,7 @@ module.exports = async function(params, context) {
 }
 ```
 
-In the "Debug" area on the right, modify the content of the "Params" to the following JSON string:
+In the **Debug** area on the right, modify the content of the **Params** to the following JSON string:
 
 ```json
 {
@@ -72,9 +82,9 @@ In the "Debug" area on the right, modify the content of the "Params" to the foll
 }
 ```
 
-Click the "Debug" button to send the request to the function `myHelloWorld.js`. At this time, the JSON string of the "Params" will be passed to the function as a parameter, and can be obtained in the function through the `params` field.
+Click the **Debug** button to send the request to the function `myHelloWorld.js`. At this time, the JSON string of the **Params** will be passed to the function as a parameter, and can be obtained in the function through the `params` field.
 
-You can see the return message of the function in the "Response" area:
+You can see the return message of the function in the **Response** area:
 
 ```json
 {
@@ -88,17 +98,22 @@ In the "Console" area, you can see the log output through `console.log` when the
 18:24:30.237 Received params: { payload: 'Hello, Micheal!' }
 ```
 
-![](_images/index/1668075929551.png)
+<ACImage src="/_images/1671506066219.png" mode="light" />
+<ACImage src="/_images/1671506114424.png" mode="dark" />
 
 ## Deploy a Function {#deploy}
 
 When finishing the development, we just need to deploy it, and then we can invoke it in reality.
 
-Click the "Deploy" button in the top bar, keep the options in the pop-up window unchanged, and click "Deploy".
+Click the **Deploy** button in the top bar, keep the options in the pop-up window unchanged, and click **Deploy**.
 
-![](_images/index/1668076003954.png)
+<ACImage src="/_images/1671506272223.png" mode="light" />
+<ACImage src="/_images/1671506314802.png" mode="dark" />
 
 After the deployment is successful, an online URL of the function will appear below the function name. Click to copy it to the clipboard.
+
+<ACImage src="/_images/1671506405456.png" mode="light" />
+<ACImage src="/_images/1671506377900.png" mode="dark" />
 
 This URL can be accessed directly through the browser. To pass parameters, just add params in the form of `?key=value` to the URL, e.g:
 
@@ -108,7 +123,8 @@ https://sample.hk.aircode.run/myHelloWorld?payload=hello
 
 Or directly check out our runnable example:
 
-<iframe src="https://codesandbox.io/embed/hungry-chatterjee-c2yyux?fontsize=14&hidenavigation=1&theme=light"
+<iframe
+  :src="`https://codesandbox.io/embed/hungry-chatterjee-c2yyux?fontsize=14&hidenavigation=1&codemirror=1&hidenavigation=1&theme=${isDark ? 'dark' : 'light'}`"
   style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
   title="hungry-chatterjee-c2yyux"
   allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"

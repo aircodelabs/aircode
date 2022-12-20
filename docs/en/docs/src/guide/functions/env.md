@@ -10,7 +10,7 @@ Environment variables can be used in the following scenarios:
 
 ## Set Environment Variables {#set}
 
-The environment variable configuration area is located in the "Environment Variables" tab of the functional area, and can be set directly in the form of key-value pairs.
+The environment variable configuration area is located in the **Environments** tab of the functional area, and can be set directly in the form of key-value pairs.
 
 For example, let's add an environment variable called `MY_TEST_ENV` with a value of `Hello World`.
 
@@ -29,7 +29,7 @@ module.exports = async function(params, context) {
 }
 ```
 
-Click "Debug" to see the return result:
+Click **Debug** to see the return result:
 
 ```json
 {

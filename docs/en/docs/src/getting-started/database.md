@@ -33,7 +33,7 @@ module.exports = async function (params, context) {
 }
 ```
 
-Click "Debug", you can see the following results in the "Response" area:
+Click **Debug**, you can see the following results in the **Response** area:
 
 ```json
 {
@@ -53,9 +53,10 @@ This indicates that the new record was successfully inserted, where `_id`, `crea
 When using `save` to insert records, there is no need to create a table in advance, AirCode will automatically create one if it does not exist.
 :::
 
-In the "Database" area below, select the `persons` table, and you can see the new data.
+In the **Database** area below, select the `persons` table, and you can see the new data.
 
-![](_images/database/1668076471815.png)
+<ACImage src="/_images/1671508034400.png" mode="light" />
+<ACImage src="/_images/1671508051952.png" mode="dark" />
 
 ## Use `find` to Find Records {#find}
 
@@ -78,7 +79,7 @@ module.exports = async function (params, context) {
 }
 ```
 
-Click "Debug", then you can see the following results in the "Response" area:
+Click **Debug**, then you can see the following results in the **Response** area:
 
 ```json
 {
@@ -123,7 +124,7 @@ module.exports = async function (params, context) {
 }
 ```
 
-Click "Debug", then you can see the following results in the "Response" area:
+Click **Debug**, then you can see the following results in the **Response** area:
 
 ```json
 {
@@ -162,7 +163,7 @@ module.exports = async function (params, context) {
 }
 ```
 
-Click "Debug", then you can see the following results in the "Response" area:
+Click **Debug**, then you can see the following results in the **Response** area:
 
 ```json
 {

@@ -30,18 +30,18 @@ module.exports = async function (params, context) {
 }
 ```
 
-点击「Debug」按钮，可以在「Response」区域看到如下结果：
+点击 **Debug** 按钮，可以在 **Response** 区域看到如下结果：
 
 ```json
 {
   "file": {
-    "_id": "636cd5128f59d5369a98664c",
+    "_id": "63a130c830d47f9de61a57f5",
     "name": "hello.txt",
-    "url": "https://sample.aircodecdn.com/hello.b10a8db164e07541.txt",
+    "url": "https://umwsep.hk.aircodecdn.com/hello.1671508168232_j93ad0cmqrg.txt",
     "type": "text/plain",
     "size": 11,
-    "createdAt": "2022-11-10T10:40:18.107Z",
-    "updatedAt": "2022-11-10T10:40:18.107Z"
+    "createdAt": "2022-12-20T03:49:28.375Z",
+    "updatedAt": "2022-12-20T03:49:28.375Z"
   }
 }
 ```
@@ -49,7 +49,7 @@ module.exports = async function (params, context) {
 代表文件上传成功，并且生成了一个 CDN 加速的访问地址。将 URL 直接在浏览器中打开，就可以看到文件内容。
 
 ```
-https://sample.aircodecdn.com/hello.b10a8db164e07541.txt
+https://umwsep.hk.aircodecdn.com/hello.1671508168232_j93ad0cmqrg.txt
 ```
 
 ::: tip 提示
@@ -58,9 +58,10 @@ AirCode 会为每个上传文件添加唯一的标识，即使上传多个同名
 
 ## 在数据库中查看上传的文件 {#files-table}
 
-每个被成功上传的文件，都会自动在数据库 `_files` 表中新增一条记录。在控制台下方的「Database」区域中，选中 `_files` 表就可以看到刚刚上传的文件。
+每个被成功上传的文件，都会自动在数据库 `_files` 表中新增一条记录。在控制台下方的 **Database** 区域中，选中 `_files` 表就可以看到刚刚上传的文件。
 
-![](_images/files/1668076914916.png)
+<ACImage src="/_images/1671508270037.png" mode="light" />
+<ACImage src="/_images/1671508319365.png" mode="dark" />
 
 ## 使用 `download` 下载文件 {#download}
 
@@ -91,7 +92,7 @@ module.exports = async function (params, context) {
 }
 ```
 
-点击「Debug」按钮，可以在「Response」区域看到如下结果：
+点击 **Debug** 按钮，可以在 **Response** 区域看到如下结果：
 
 ```json
 {
@@ -135,7 +136,7 @@ module.exports = async function (params, context) {
 }
 ```
 
-点击「Debug」按钮，可以在「Response」区域看到如下结果：
+点击 **Debug** 按钮，可以在 **Response** 区域看到如下结果：
 
 ```json
 {
@@ -149,7 +150,7 @@ module.exports = async function (params, context) {
 }
 ```
 
-代表文件已经被成功删除。此时点击「Database」区域的刷新按钮，可以看到 `_files` 表中的记录也已经被删除。
+代表文件已经被成功删除。此时点击 **Database** 区域的刷新按钮，可以看到 `_files` 表中的记录也已经被删除。
 
 ## 接下来 {#next}
 

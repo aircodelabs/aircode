@@ -2,7 +2,8 @@
 
 AirCode 提供了一个 WebIDE，让云函数的开发过程完全在线完成，无需下载任何软件和配置。
 
-![](_images/development/1668077086519.png)
+<ACImage src="/_images/1671508523496.png" mode="light" />
+<ACImage src="/_images/1671508539808.png" mode="dark" />
 
 ## 运行环境 {#runtime}
 
@@ -12,9 +13,10 @@ AirCode 的云函数使用 JavaScript 作为编程语言，运行时环境为 No
 
 ## 创建云函数 {#create}
 
-点击函数列表中的「+」，输入函数名称，点击「✓」就可以创建一个 Node.js 云函数。
+点击函数列表中的 **+** ，输入函数名称，点击 **✓** 就可以创建一个 Node.js 云函数。
 
-![](_images/development/1668077143233.png)
+<ACImage src="/_images/1671505845666.png" mode="light" />
+<ACImage src="/_images/1671505926961.png" mode="dark" />
 
 所有云函数都以 `.js` 作为扩展名，你也可以修改扩展名来创建其他类型的文件，例如 `.json` 文件、`.txt` 文件等。这些非 `.js` 的文件将不会被当做云函数，即不会生成线上 URL 接口。它们一般用于存储配置信息，并在其他云函数中通过 `require` 引用。
 
@@ -197,11 +199,12 @@ module.exports = async function(params, context) {
 
 ## 删除云函数 {#delete}
 
-点击函数列表中对应函数的更多按钮，选择「删除」，在弹出对话框中点击确认即可删除该函数。
+点击函数列表中对应函数的更多按钮，选择 **Delete** ，在弹出对话框中点击确认即可删除该函数。
 
-![](_images/development/1668077223866.png)
+<ACImage src="/_images/1671517135731.png" mode="light" />
+<ACImage src="/_images/1671517161834.png" mode="dark" />
 
 **更多参考**
 
-- 如果删除的这个函数已经上线过，则需要再执行一次部署才能从线上将其删除，参考：[部署云函数 - 部署删除操作](/guide/functions/deployment.html#部署删除操作)
+- 如果删除的这个函数已经上线过，则需要再执行一次部署才能从线上将其删除，参考：[部署云函数 - 部署删除操作](/guide/functions/deployment.html#deploy-the-deleting-operations)
 - 删除后的云函数会被放到函数回收站，可以查看和恢复，参考：[函数回收站](/guide/functions/recycle.html)

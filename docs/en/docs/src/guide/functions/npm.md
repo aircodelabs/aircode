@@ -1,12 +1,12 @@
-# NPM {#intro}
+# Using NPM to manage dependencies {#intro}
 
 AirCode provides a visual way to management NPM dependencies, operations like searching, installing, upgrading and uninstalling packages are all completed by clicking without entering any commands.
 
 ## Install Dependencies {#install}
 
-Dependency management is located in the "Dependencies" area below the function list. Enter the name and search in the input box, such as `lodash`, then click the corresponding dependency package to install the latest version.
+Dependency management is located in the **Dependencies** area below the function list. Enter the name and search in the input box, such as `lodash`, then click the corresponding dependency package to install the latest version.
 
-If you want to install other versions, you can click the icon on the right side of the search box, or click "View All Search Results", and select a specific version in the pop-up window.
+If you want to install other versions, you can click the icon on the right side of the search box, or click **View All Search Results**, and select a specific version in the pop-up window.
 
 ::: tip Tips
 The duration of the installation will vary depending on the size of the package and network conditions, please be patient. For restrictions on the size of dependent packages and the longest installation time, please refer to: [Resource Limits - NPM Dependencies](/about/limits.html#npm-dependencies).
@@ -29,7 +29,7 @@ module.exports = async function(params, context) {
 }
 ```
 
-Click "Debug" to see the return result:
+Click **Debug** to see the return result:
 
 ```json
 {
@@ -69,7 +69,7 @@ It means the dependency is deployed successfully online.
 
 When the mouse hovers over an installed dependency, an operation button will appear on the right, allowing you to quickly upgrade the version or delete it.
 
-Among them, "update to the latest version" will update the package to the latest official version currently released, and any unofficial versions such as `alpha`, `beta`, `rc` will be ignored.
+Among them, **Update** will update the package to the latest official version currently released, and any unofficial versions such as `alpha`, `beta`, `rc` will be ignored.
 
 If you want to install a specific version, please re-[Search and Install the Dependency](#install).
 
