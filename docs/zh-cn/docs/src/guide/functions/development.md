@@ -199,12 +199,12 @@ module.exports = async function(params, context) {
 
 ## 删除云函数 {#delete}
 
-点击函数列表中对应函数的更多按钮，选择 **删除** ，在弹出对话框中点击确认即可删除该函数。
+点击函数列表中对应函数的更多按钮，选择 **Delete** ，在弹出对话框中点击确认即可删除该函数。
 
 <ACImage src="/_images/1671517135731.png" mode="light" />
 <ACImage src="/_images/1671517161834.png" mode="dark" />
 
 **更多参考**
 
-- 如果删除的这个函数已经上线过，则需要再执行一次部署才能从线上将其删除，参考：[部署云函数 - 部署删除操作](/guide/functions/deployment.html#部署删除操作)
+- 如果删除的这个函数已经上线过，则需要再执行一次部署才能从线上将其删除，参考：[部署云函数 - 部署删除操作](/guide/functions/deployment.html#deploy-the-deleting-operations)
 - 删除后的云函数会被放到函数回收站，可以查看和恢复，参考：[函数回收站](/guide/functions/recycle.html)

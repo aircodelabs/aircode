@@ -30,25 +30,25 @@ module.exports = async function (params, context) {
 }
 ```
 
-Click "Debug", then you can see the following results in the "Response" area:
+Click **Debug**, then you can see the following results in the **Response** area:
 
 ```json
 {
   "file": {
-    "_id": "636cd5128f59d5369a98664c",
+    "_id": "63a130c830d47f9de61a57f5",
     "name": "hello.txt",
-    "url": "https://sample.aircodecdn.com/hello.b10a8db164e07541.txt",
+    "url": "https://umwsep.hk.aircodecdn.com/hello.1671508168232_j93ad0cmqrg.txt",
     "type": "text/plain",
     "size": 11,
-    "createdAt": "2022-11-10T10:40:18.107Z",
-    "updatedAt": "2022-11-10T10:40:18.107Z"
+    "createdAt": "2022-12-20T03:49:28.375Z",
+    "updatedAt": "2022-12-20T03:49:28.375Z"
   }
 }
 ```
 Indicates that the file is uploaded successfully, and a CDN-accelerated access address is generated. Open the URL directly in your browser to see the file content.
 
 ```
-https://sample.aircodecdn.com/hello.b10a8db164e07541.txt
+https://umwsep.hk.aircodecdn.com/hello.1671508168232_j93ad0cmqrg.txt
 ```
 
 ::: tip Tips
@@ -57,9 +57,10 @@ AirCode will generate a unique identifier to each uploaded file. Even if multipl
 
 ## View Uploaded Files in Database {#files-table}
 
-Each successfully uploaded file will automatically create a new record in the database's `_files` table. In the "Database" area at the bottom of the console, select the `_files` table to see the file you uploaded.
+Each successfully uploaded file will automatically create a new record in the database's `_files` table. In the **Database** area at the bottom of the console, select the `_files` table to see the file you uploaded.
 
-![](_images/files/1668076914916.png)
+<ACImage src="/_images/1671508270037.png" mode="light" />
+<ACImage src="/_images/1671508319365.png" mode="dark" />
 
 ## Use `download` to Download Files {#download}
 
@@ -90,7 +91,7 @@ module.exports = async function (params, context) {
 }
 ```
 
-Click "Debug", then you can see the following results in the "Response" area:
+Click **Debug**, then you can see the following results in the **Response** area:
 
 ```json
 {
@@ -134,7 +135,7 @@ module.exports = async function (params, context) {
 }
 ```
 
-Click "Debug", then you can see the following results in the "Response" area:
+Click **Debug**, then you can see the following results in the **Response** area:
 
 ```json
 {
@@ -148,7 +149,7 @@ Click "Debug", then you can see the following results in the "Response" area:
 }
 ```
 
-Indicates that the file has been successfully deleted. At this point, if you click the refresh button in the "Database" area, you will see that the record in the `_files` table has also been deleted.
+Indicates that the file has been successfully deleted. At this point, if you click the refresh button in the **Database** area, you will see that the record in the `_files` table has also been deleted.
 
 ## What's Next? {#next}
 

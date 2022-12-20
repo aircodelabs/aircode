@@ -1,8 +1,9 @@
 # Develop Online {#intro}
 
-AirCode provides a WebIDE that allows the development process to be completely online without downloading any dependency and configuration.
+AirCode provides an in-browser IDE that allows the development process to be completely online without downloading any dependency and configuration.
 
-![](_images/development/1668077086519.png)
+<ACImage src="/_images/1671508523496.png" mode="light" />
+<ACImage src="/_images/1671508539808.png" mode="dark" />
 
 ## Runtime {#runtime}
 
@@ -12,9 +13,10 @@ If you are unfamiliar with these two languages, it is recommended to go through 
 
 ## Create a Function {#create}
 
-Click "+" above the function list, enter a name, and click "✓" to create a Node.js function.
+Click **+** above the function list, enter a name, and click **✓** to create a Node.js function.
 
-![](_images/development/1668077143233.png)
+<ACImage src="/_images/1671505845666.png" mode="light" />
+<ACImage src="/_images/1671505926961.png" mode="dark" />
 
 All cloud functions have `.js` as the extension, and you can also modify it to create other types of files, such as `.json`, `.txt`, etc. These non-`.js` files will not be treated as cloud functions,
 that is, no online URL API will be generated. They are generally used to store configurations and referenced by `require` in other cloud functions.
@@ -35,7 +37,7 @@ Every cloud function needs to `module.exports` an `async` function, and it conta
 - `context` contains the context information of the request and some helper methods
 
 ::: warning Note
-If an `async` function is not exported through `module.exports`, it will not be able to take online requests. This is normally used as private functions, see: [private functions](/guide/functions/private.html) for more details.
+If an `async` function is not exported through `module.exports`, it will not be able to take online requests. This is normally used as private functions, see: [Private Functions](/guide/functions/private.html) for more details.
 :::
 
 for example：
@@ -199,9 +201,10 @@ If there is a global variable storage requirement in the function, it is recomme
 
 ## Delete a Function {#delete}
 
-Click the "More" button of a corresponding function, select "Delete", and click OK in the pop-up window to delete the function.
+Click the "More" button of a corresponding function, select **Delete**, and click OK in the pop-up window to delete the function.
 
-![](_images/development/1668077223866.png)
+<ACImage src="/_images/1671517135731.png" mode="light" />
+<ACImage src="/_images/1671517161834.png" mode="dark" />
 
 **Guide**
 
