@@ -16,6 +16,9 @@ You can also choose other Node.js versions we support in the application creatio
 
 If you want to modify the Node.js version of an existing App, you can open the **Settings** dialog and select it in the **Runtime** area.
 
+<ACImage src="/_images/1671605783862.png" mode="light" />
+<ACImage src="/_images/1671605834793.png" mode="dark" />
+
 ::: tip Note
 Modifying the Node.js version will only affect the local debugging environment. All the changes will take effect online on the next deployment.
 :::
