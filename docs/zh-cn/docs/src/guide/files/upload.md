@@ -55,8 +55,6 @@ module.epxorts = async function (params, context) {
 
 将该云函数部署后，可以在函数名的下方找到该函数的线上访问地址，点击即可复制。请记住这个地址，后续需要从浏览器向该地址发起请求以完成上传操作。
 
-![image]
-
 在浏览器中，大多数情况下我们会提供一个文件选择框，例如：
 
 ```html
@@ -140,7 +138,7 @@ const fd = await fs.open('package.json');
 const stream = fd.createReadStream();
 
 // Upload a file with stream data
-const file = await aircode.files.upload(stream, 'steam-sample.json');
+const file = await aircode.files.upload(stream, 'stream-sample.json');
 ```
 
 ::: tip 提示
@@ -179,8 +177,6 @@ const file2 = await aircode.files.upload('Hello World');
 ```
 
 如果调用接口时传递了 `name` 参数，则会作为 `_files` 数据表中的 `name` 字段保存。
-
-![image]
 
 ## 文件 MIME 类型 {#mime-types}
 

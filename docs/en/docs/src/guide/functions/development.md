@@ -55,7 +55,7 @@ After deployment, access this function through curl with the request body:
 
 ```sh
 curl -H "content-type:application/json" -X POST -d '{"message": "Hello World"}' \
-https://sample.js.aircode.run/hello
+https://sample.hk.aircode.run/hello
 ```
 
 will return：

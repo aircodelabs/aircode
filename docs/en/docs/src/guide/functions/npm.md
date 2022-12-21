@@ -6,6 +6,9 @@ AirCode provides a visual way to management NPM dependencies, operations like se
 
 Dependency management is located in the **Dependencies** area below the function list. Enter the name and search in the input box, such as `lodash`, then click the corresponding dependency package to install the latest version.
 
+<ACImage src="/_images/1671604531408.png" mode="light" />
+<ACImage src="/_images/1671604567893.png" mode="dark" />
+
 If you want to install other versions, you can click the icon on the right side of the search box, or click **View All Search Results**, and select a specific version in the pop-up window.
 
 ::: tip Tips
@@ -69,10 +72,10 @@ It means the dependency is deployed successfully online.
 
 When the mouse hovers over an installed dependency, an operation button will appear on the right, allowing you to quickly upgrade the version or delete it.
 
-Among them, **Update** will update the package to the latest official version currently released, and any unofficial versions such as `alpha`, `beta`, `rc` will be ignored.
+Among them, **Update to latest** will update the package to the latest official version currently released, and any unofficial versions such as `alpha`, `beta`, `rc` will be ignored.
 
 If you want to install a specific version, please re-[Search and Install the Dependency](#install).
 
-::: tip Tips
-In order to ensure online security, changing versions or deleting dependencies only takes effect locally. If you want them to take effect online, just deploy the function.
+::: tip Note
+In order to ensure online security, changing versions or deleting dependencies only takes effect locally. If you want them to take effect online, just deploy any function.
 :::

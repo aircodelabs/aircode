@@ -12,6 +12,9 @@ Environment variables can be used in the following scenarios:
 
 The environment variable configuration area is located in the **Environments** tab of the functional area, and can be set directly in the form of key-value pairs.
 
+<ACImage src="/_images/1671605062316.png" mode="light" />
+<ACImage src="/_images/1671605076328.png" mode="dark" />
+
 For example, let's add an environment variable called `MY_TEST_ENV` with a value of `Hello World`.
 
 Environment variables can be accessed through `process.env` in cloud functions. For example, create a cloud function called `env.js` and modify the code as follows:

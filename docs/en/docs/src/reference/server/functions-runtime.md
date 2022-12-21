@@ -4,12 +4,21 @@ The AirCode runtime is Node.js, which supports writing and executing server-side
 
 ## Node.js Versions {#nodejs-versions}
 
-By default, the Node.js version of a newly created AirCode App is **v18**, which is the current LTS version of Node.js.
+By default, the Node.js version of a newly created AirCode App is **v16**, which is the stable version of Node.js.
 
 You can also choose other Node.js versions we support in the application creation window:
 
-- Node.js v18 (LTS)
-- Node.js v16 (Maintenance)
+- Node.js v16 (Stable)
+- Node.js v14 (Maintenance)
+
+<ACImage src="/_images/1671605611943.png" mode="light" />
+<ACImage src="/_images/1671605636689.png" mode="dark" />
+
+If you want to modify the Node.js version of an existing App, you can open the **Settings** dialog and select it in the **Runtime** area.
+
+::: tip Note
+Modifying the Node.js version will only affect the local debugging environment. All the changes will take effect online on the next deployment.
+:::
 
 ## Execution Timeout {#execution-timeout}
 
@@ -17,7 +26,14 @@ AirCode's function includes an execution timeout, if there is no response within
 
 ### Modify Execution Timeout {#modify-execution-timeout} 
 
-The default timeout of functions is **60 seconds**. You can also modify it in the pop-up window of the application settings. Currently, the supported timeout range is from 5 to 120 seconds.
+The default timeout of functions is **60 seconds**. You can also modify it in the **Runtime** are of the **Settings** dialog. Currently, the supported timeout range is from 5 to 90 seconds.
+
+<ACImage src="/_images/1671606050858.png" mode="light" />
+<ACImage src="/_images/1671606088640.png" mode="dark" />
+
+::: tip Note
+Modifying the Function Execution Timeout will only affect the local debugging environment. All the changes will take effect online on the next deployment.
+:::
 
 ### Possible Timeout Reasons {#possible-timeout-conditions}
 

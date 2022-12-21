@@ -140,7 +140,7 @@ const fd = await fs.open('package.json');
 const stream = fd.createReadStream();
 
 // Upload a file with stream data
-const file = await aircode.files.upload(stream, 'steam-sample.json');
+const file = await aircode.files.upload(stream, 'stream-sample.json');
 ```
 
 ::: tip Tips
