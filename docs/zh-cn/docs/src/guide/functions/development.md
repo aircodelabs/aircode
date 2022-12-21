@@ -53,7 +53,7 @@ module.exports = async function(params, context) {
 
 ```sh
 curl -H "content-type:application/json" -X POST -d '{"message": "Hello World"}' \
-https://sample.js.aircode.run/hello
+https://sample.hk.aircode.run/hello
 ```
 
 会得到如下结果：

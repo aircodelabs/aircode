@@ -42,6 +42,9 @@ aircode.run(functionName, { message: 'Hello World' })
 
 对于每一个上线后的云函数，都可以在编辑器函数名称下方找到它的调用 URL，点击时会复制该 URL。
 
+<ACImage src="/_images/1671601906160.png" mode="light" />
+<ACImage src="/_images/1671601929191.png" mode="dark" />
+
 向该 URL 发送 HTTP 请求（GET、POST 均可），即可实现对函数的调用。
 
 我们提供了一个示例云函数，可使用浏览器打开查看结果：

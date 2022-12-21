@@ -4,12 +4,24 @@ AirCode 的运行时是 Node.js，支持使用 JavaScript 编写服务端代码�
 
 ## Node.js 版本 {#nodejs-versions}
 
-默认情况下，新创建的 AirCode 应用的 Node.js 版本为 **v18**，这是当前 Node.js 的 LTS 版本。
+默认情况下，新创建的 AirCode 应用的 Node.js 版本为 **v16**，这是当前 Node.js 的稳定版本。
 
 你也可以在创建应用的窗口中选择其他我们支持的 Node.js 版本：
 
-- Node.js v18 (LTS)
-- Node.js v16 (Maintenance)
+- Node.js v16 (Stable)
+- Node.js v14 (Maintenance)
+
+<ACImage src="/_images/1671605611943.png" mode="light" />
+<ACImage src="/_images/1671605636689.png" mode="dark" />
+
+若希望修改一个已存在的应用的 Node.js 版本，可进入对应应用的 **Settings** 界面，并在 **Runtime** 区域进行选择。
+
+<ACImage src="/_images/1671605783862.png" mode="light" />
+<ACImage src="/_images/1671605834793.png" mode="dark" />
+
+::: tip 提示
+修改 Node.js 版本只会影响本地调试环境，若希望在线上生效，需要进行一次部署。
+:::
 
 ## 超时时间 {#execution-timeout}
 
@@ -17,7 +29,14 @@ AirCode 的云函数包含执行超时时间，如果在超时时间内没有响
 
 ### 修改超时时间 {#modify-execution-timeout}
 
-云函数默认的超时时间为 **60 秒**，你也可以在应用的设置弹窗中自行修改超时时间，目前支持的可设置范围为 5 至 120 秒。
+云函数默认的超时时间为 **60 秒**，你也可以在应用的 **Settings** 弹窗的 **Runtime** 区域中自行修改超时时间，目前支持的可设置范围为 5 至 90 秒。
+
+<ACImage src="/_images/1671606050858.png" mode="light" />
+<ACImage src="/_images/1671606088640.png" mode="dark" />
+
+::: tip 提示
+修改超时时间只会影响本地调试环境，若希望在线上生效，需要进行一次部署。
+:::
 
 ### 可能的超时原因 {#possible-timeout-conditions}
 

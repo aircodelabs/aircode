@@ -10,6 +10,9 @@ Only deployed functions can be accessed in the real environment. If you don’t 
 
 For each deployed function, you can find its URL under the function name, and it will be copied when clicked.
 
+<ACImage src="/_images/1671601906160.png" mode="light" />
+<ACImage src="/_images/1671601929191.png" mode="dark" />
+
 Send an HTTP request (either GET or POST) to the URL to call the function.
 
 We provide a sample function that can be called in a browser to view the results:
