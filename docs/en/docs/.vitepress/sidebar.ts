@@ -32,6 +32,7 @@ const sidebar: DefaultTheme.Sidebar = {
           text: 'Advanced',
           items: [
             { text: 'Send HTTP Request', link: '/guide/functions/http-request' },
+            { text: 'Load Other Functions', link: '/guide/functions/require' },
           ],
         },
       ],

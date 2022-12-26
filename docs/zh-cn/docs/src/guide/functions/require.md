@@ -9,7 +9,7 @@
 const axios = require('axios');
 
 // Add a function to `module.exports`
-// So it can be required in other Cloud Functions
+// So it can be loaded in other Cloud Functions
 module.exports.add = function(a, b) {
   return a + b;
 }
@@ -28,11 +28,11 @@ module.exports.getHumans = async function() {
 在另一个名为 `caller.js` 的函数中，可以通过 `require` 引入并调用在 `tool.js` 中导出的函数：
 
 ```js
-// Import the functions using `require`
+// Load the functions using `require`
 const { add, getHumans } = require('./tools');
 
 module.exports = async function(params, context) {
-  // Call the imported functions
+  // Call the loaded functions
   const addResult = add(1, 2);
   // Remember to use `await` for async functions
   const humans = await getHumans();
@@ -53,8 +53,9 @@ module.exports = async function(params, context) {
 }
 ```
 
-::: warning 注意
-如果希望在线上成功调用，则所有被引用的函数都需要部署。在本例中，即需要同时部署 `tools.js` 和 `caller.js` 函数。
-:::
+注意，如果希望在线上成功调用，则**所有**被引用的函数都需要部署。在本例中，即需要同时部署 `tools.js` 和 `caller.js` 函数。
 
-若想了解更多关于 Node.js 模块引用的细节，可参考 [Node.js Modules 文档](https://nodejs.org/api/modules.html)。
+::: tip 更多参考
+- 通过 `require` 只能引用**同一应用**下的不同函数，若希望调用**其他应用**中的函数，可直接通过 HTTP 的形式访问，参考[调用云函数](/guide/functions/invoke.html)
+- 若想了解更多关于 Node.js 模块引用的细节，可参考 [Node.js Modules 文档](https://nodejs.org/api/modules.html)
+:::
