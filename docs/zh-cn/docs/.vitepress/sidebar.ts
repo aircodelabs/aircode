@@ -25,12 +25,12 @@ const sidebar: DefaultTheme.Sidebar = {
         { text: '调用云函数', link: '/guide/functions/invoke' },
         { text: '线上日志', link: '/guide/functions/logs' },
         { text: '使用 NPM 安装依赖', link: '/guide/functions/npm' },
-        { text: '使用环境变量', link: '/guide/functions/env' },
         { text: '云函数运行时', link: '/reference/server/functions-runtime' },
         { text: '云函数 API', link: '/reference/server/functions-api' },
         {
           text: '高级功能',
           items: [
+            { text: '使用环境变量', link: '/guide/functions/env' },
             { text: '发送 HTTP 请求', link: '/guide/functions/http-request' },
             { text: '函数间引用', link: '/guide/functions/require' },
             // { text: '获取 POST 参数', link: '/guide/functions/post-params' },
@@ -53,16 +53,21 @@ const sidebar: DefaultTheme.Sidebar = {
         { text: '查询数据', link: '/guide/database/find' },
         { text: '更新数据', link: '/guide/database/update' },
         { text: '删除数据', link: '/guide/database/delete' },
-        { text: '基于地理位置查询', link: '/guide/database/geo' },
-        { text: '使用索引优化查询', link: '/guide/database/indexes' },
         // { text: '在网页中管理数据', link: '/guide/database/web-management' },
         { text: '数据库 API', link: '/reference/server/database-api' },
-        // { text: 'ID 处理', link: '/guide/database/objectid' },
-        // { text: '分组聚合', link: '/guide/database/group' },
-        // { text: '关联查询', link: '/guide/database/populate' },
-        // { text: '备份与恢复', link: '/guide/database/backup' },
-        // { text: '使用其他 SDK 连接', link: '/guide/database/other-drivers' },
-        // { text: '连接自有数据库', link: '/guide/database/other-db' },
+        {
+          text: '高级功能',
+          items: [
+            { text: '基于地理位置查询', link: '/guide/database/geo' },
+            { text: '使用索引优化查询', link: '/guide/database/indexes' },
+            // { text: 'ID 处理', link: '/guide/database/objectid' },
+            // { text: '分组聚合', link: '/guide/database/group' },
+            // { text: '关联查询', link: '/guide/database/populate' },
+            // { text: '备份与恢复', link: '/guide/database/backup' },
+            // { text: '使用其他 SDK 连接', link: '/guide/database/other-drivers' },
+            // { text: '连接自有数据库', link: '/guide/database/other-db' },
+          ]
+        }
       ],
     },
     {
