@@ -32,11 +32,11 @@ const sidebar: DefaultTheme.Sidebar = {
           text: '高级功能',
           items: [
             { text: '发送 HTTP 请求', link: '/guide/functions/http-request' },
+            { text: '函数间引用', link: '/guide/functions/require' },
             // { text: '获取 POST 参数', link: '/guide/functions/post-params' },
             // { text: '获取 GET 参数', link: '/guide/functions/get-params' },
             // { text: '获取请求头和方法', link: '/guide/functions/request-header-and-method' },
             // { text: '设置返回头和状态码', link: '/guide/functions/response-header-and-code' },
-            // { text: '函数间引用', link: '/guide/functions/require' },
             // { text: '私有函数', link: '/guide/functions/private' },
             // { text: '读写本地文件', link: '/guide/functions/fs' },
             // { text: '函数回收站', link: '/guide/functions/recycle' },
