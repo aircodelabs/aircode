@@ -28,6 +28,12 @@ const sidebar: DefaultTheme.Sidebar = {
         { text: 'Environment Variable', link: '/guide/functions/env' },
         { text: 'Function Runtime', link: '/reference/server/functions-runtime' },
         { text: 'Function API', link: '/reference/server/functions-api' },
+        {
+          text: 'Advanced',
+          items: [
+            { text: 'Send HTTP Request', link: '/guide/functions/http-request' },
+          ],
+        },
       ],
     },
     {

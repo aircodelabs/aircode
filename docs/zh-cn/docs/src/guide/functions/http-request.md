@@ -28,7 +28,7 @@ module.exports = async function (params, context) {
     return {
       error: error.message,
     };
-  }
+  }##
 }
 ```
 
@@ -85,6 +85,39 @@ module.exports = async function (params, context) {
     );
     return result.data;
   } catch (errors) {
+    console.log('Something wrong:', error.message);
+    return {
+      error: error.message,
+    };
+  }
+}
+```
+
+## 发送并发 HTTP 请求 {#concurrency}
+
+有时候，我们希望一次性发送多个 HTTP 请求，从而减少等待时间。这时需要使用 `Promise.all` 来确保所有请求都完成，并获取结果。
+
+```js
+// Import axios at first
+const axios = require('axios');
+
+module.exports = async function (params, context) {
+  // Do not use await, so the return value is a Promise object
+  // Note to replace the URLs with yours
+  const firstRequestPromise = axios.get('https://some.domain.com/api/one');
+  const secondRequestPromise = axios.get('https://some.domain.com/api/two');
+
+  try {
+    // Use `Promise.all` to make sure all requests are completed
+    const [ firstResult, secondResult ] = await Promise.all([
+      firstRequestPromise,
+      secondRequestPromise,
+    ]);
+    return {
+      firstData: firstResult.data,
+      secondData: secondResult.data,
+    };
+  } catch (error) {
     console.log('Something wrong:', error.message);
     return {
       error: error.message,
