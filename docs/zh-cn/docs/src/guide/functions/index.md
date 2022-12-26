@@ -61,14 +61,8 @@
 ## 更多使用技巧 {#advanced}
 
 - [使用环境变量](/guide/functions/env.html)
-<!-- - [在云函数中发送 HTTP 请求](/guide/functions/http.html)
-- 获取 [POST 参数](/guide/functions/post-params.html)和 [GET 参数](/guide/functions/get-params.md)
-- [获取请求头和方法](/guide/functions/request-header-and-method.html)
-- [设置返回头和状态码](/guide/functions/response-header-and-code.html)
+- [发送 HTTP 请求](/guide/functions/http-request.html)
 - [函数间引用](/guide/functions/require.html)
-- [创建和使用私有函数](/guide/functions/private.html)
-- [读写本地文件](/guide/functions/fs.html)
-- [函数回收站](/guide/functions/recycle.html) -->
 
 ## 相关限制 {#limits}
 

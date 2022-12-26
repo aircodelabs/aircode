@@ -62,6 +62,8 @@ If you have never developed a cloud function before, it is recommended to follow
 ## Advanced Usage {#advanced}
 
 - [Environment Variable](/guide/functions/env.html)
+- [Send HTTP Request](/guide/functions/http-request.html)
+- [Load Other Functions](/guide/functions/require.html)
 
 ## Limit {#limits}
 

@@ -25,9 +25,16 @@ const sidebar: DefaultTheme.Sidebar = {
         { text: 'Invoke Functions', link: '/guide/functions/invoke' },
         { text: 'Online Logs', link: '/guide/functions/logs' },
         { text: 'Using NPM', link: '/guide/functions/npm' },
-        { text: 'Environment Variable', link: '/guide/functions/env' },
         { text: 'Function Runtime', link: '/reference/server/functions-runtime' },
         { text: 'Function API', link: '/reference/server/functions-api' },
+        {
+          text: 'Advanced',
+          items: [
+            { text: 'Environment Variable', link: '/guide/functions/env' },
+            { text: 'Send HTTP Request', link: '/guide/functions/http-request' },
+            { text: 'Load Other Functions', link: '/guide/functions/require' },
+          ],
+        },
       ],
     },
     {
@@ -39,9 +46,14 @@ const sidebar: DefaultTheme.Sidebar = {
         { text: 'Find Data', link: '/guide/database/find' },
         { text: 'Update Data', link: '/guide/database/update' },
         { text: 'Delete Data', link: '/guide/database/delete' },
-        { text: 'Geo-based Query', link: '/guide/database/geo' },
-        { text: 'Use Indexes', link: '/guide/database/indexes' },
         { text: 'Database API', link: '/reference/server/database-api' },
+        {
+          text: 'Advanced',
+          items: [
+            { text: 'Geo-based Query', link: '/guide/database/geo' },
+            { text: 'Use Indexes', link: '/guide/database/indexes' },
+          ]
+        }
       ],
     },
     {
