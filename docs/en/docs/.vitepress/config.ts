@@ -23,6 +23,7 @@ export default defineConfig({
     outline: [2, 3],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/aircodelabs/aircode' },
+      { icon: 'twitter', link: 'https://twitter.com/aircodelabs' },
     ],
     editLink: {
       pattern: 'https://github.com/aircodelabs/aircode/blob/main/docs/en/docs/src/:path',
