@@ -103,7 +103,7 @@ __parameter__
 
 __return__
 
-- `{Query}`: `Query` object, you can add chained expressions to have more query conditions, you can also use [Query Commands](#query-commands), [Update Commands](#update-commands), [Delete Commands](#delete-commands) to perform the action
+- `{Query}`: `Query` object, you can add chained expressions to have more query conditions, you can also use [Query Commands](#query-commands) to perform the action
 
 __Guide__
 
@@ -368,7 +368,7 @@ const result = await PersonsTable
   .save();
 ```
 
-Specify the operation to be performed during the update, and [Update Commands `save`](#update-commands) needs to be used at the end to perform the update.
+Specify the operation to be performed during the update, and [the command `save`](#query-save) needs to be used at the end to perform the update.
 
 In the `set` parameters, there are two ways to specify the data:
 - Directly specify the value to be set, for example, `pass: false` in the example means to set the `pass` field to `false`
