@@ -103,7 +103,7 @@ __参数__
 
 __返回__
 
-- `{Query}`：`Query` 对象，可以附加链式表达式来添加更多查询条件，也可以使用[查询指令](#find-commands)、[更新指令](#update-commands)、[删除指令](#delete-commands)来执行操作
+- `{Query}`：`Query` 对象，可以附加链式表达式来添加更多查询条件，也可以使用 [Query 指令](#query-commands)来执行操作
 
 __参考教程__
 
@@ -368,7 +368,7 @@ const result = await PersonsTable
   .save();
 ```
 
-用于指定更新时进行的操作，需要在最后使用[更新指令 `save`](#query-save) 来执行更新。
+用于指定更新时进行的操作，需要在最后使用[指令 `save`](#query-save) 来执行更新。
 
 在 `set` 的参数中，可以有两种方式指定要更新的数据：
 - 直接指定要设置的值，例如示例中的 `pass: false` 代表将 `pass` 字段设置为 `false`
