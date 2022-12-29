@@ -27,3 +27,16 @@ jobs:
           vercel pull --yes --environment=production --token=${{ secrets.VERCEL_DEPLOY_TOKEN }}
           vercel build --prod --token=${{ secrets.VERCEL_DEPLOY_TOKEN }}
           vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_DEPLOY_TOKEN }}
+  DocSearch-Crawl:
+    needs: Deploy-Production
+    runs-on: ubuntu-latest
+    steps:
+      - name: Algolia crawler creation and crawl
+        uses: algolia/algoliasearch-crawler-github-actions@v1.0.10
+        id: algolia_crawler
+        with:
+          crawler-user-id: ${{ secrets.DOCSEARCH_DOCS_EN_CRAWER_USER_ID }}
+          crawler-api-key: ${{ secrets.DOCSEARCH_DOCS_EN_CRAWLER_API_KEY }}
+          algolia-app-id: ${{ secrets.DOCSEARCH_DOCS_EN_ALGOLIA_APP_ID }}
+          algolia-api-key: ${{ secrets.DOCSEARCH_DOCS_EN_ALGOLIA_API_KEY }}
+          site-url: 'https://docs.aircode.io'
