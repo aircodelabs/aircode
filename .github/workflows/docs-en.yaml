@@ -40,3 +40,4 @@ jobs:
           algolia-app-id: ${{ secrets.DOCSEARCH_DOCS_EN_ALGOLIA_APP_ID }}
           algolia-api-key: ${{ secrets.DOCSEARCH_DOCS_EN_ALGOLIA_API_KEY }}
           site-url: 'https://docs.aircode.io'
+          crawler-name: aircode
