@@ -78,7 +78,13 @@ The value in the object is of `string` or `Array<string>` type, for example `con
 
 ### `context.trigger`
 
-`{string}`: Obtain the source of the function call, which is currently fixed as `'HTTP'`.
+`{string}`: Obtain the source of the function call, can be one of the following values:
+
+| Value | Trigger | Guide |
+| ---- | ---- | ---- |
+| `'HTTP'` | via HTTP/HTTPS | [Invoke Functions](/guide/functions/invoke.html) |
+| `'SCHEDULE'` | via schedule jobs | [Schedule Jobs](/guide/functions/schedule-jobs.html) |
+| `'DEBUG'` | via online debugging | [Debug Online](/guide/functions/debug.html) |
 
 ### `context.set(field, value)`
 
