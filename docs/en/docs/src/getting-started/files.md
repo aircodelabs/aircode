@@ -64,10 +64,6 @@ Each successfully uploaded file will automatically create a new record in the da
 
 ## Use `download` to Download Files {#download}
 
-::: danger Attention
-The `download` API is under development and will be ready in December 2022, stay tuned!
-:::
-
 After querying the record in the `_files` table, call the `download` API with the record to download the file content to the local for temporary use. By default, the returned result is of type `Buffer`, which represents the binary information of the file content.
 
 For example, we will find and download the file uploaded in the previous step:
@@ -107,10 +103,6 @@ The downloaded file should only be used temporarily for this request, such as te
 :::
 
 ## Use `delete` to delete files {#delete}
-
-::: danger Attention
-The `delete` API is under development and will be ready in December 2022, stay tuned!
-:::
 
 Calling `delete` will permanently delete the record from the file storage and the `_files` table, after which the file is no longer accessible via its URL.
 
